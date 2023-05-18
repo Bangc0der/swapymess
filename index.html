@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mess Swap Portal</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="login-container">
+    <h1>Mess Swap Portal</h1>
+      <form id="swap-form">
+        <label for="user-id">User ID:</label>
+        <input type="text" id="user-id" name="user-id" required>
+        <br>
+        <label for="user-name">User Name:</label>
+        <input type="text" id="user-name" name="user-name" required>
+        <br>
+        <button type="submit">Swap</button>
+      </form>
+    <button id="google-login-btn">Sign in with Google</button>
+  </div>
+
+  <div id="swap-container" style="display: none;">
+    <h2>Swap Mess</h2>
+    <form id="swap-form">
+      <label for="user-id">User ID:</label>
+      <input type="text" id="user-id" name="user-id" required>
+      <br>
+      <label for="user-name">User Name:</label>
+      <input type="text" id="user-name" name="user-name" required>
+      <br>
+      <button type="submit">Swap</button>
+    </form>
+  </div>
+
+  <!-- Add your JavaScript code here -->
+
+  <script src="https://apis.google.com/js/api.js" onload="handleClientLoad()"></script>
+  <script src="script.js"></script>
+</body>
+</html>
