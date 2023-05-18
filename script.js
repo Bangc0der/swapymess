@@ -1,15 +1,15 @@
-// Load the Google API client library
+// Loading the Google API client library
 function handleClientLoad() {
   gapi.load('client:auth2', initClient);
 }
 
-// Initialize the API client library and set up sign-in listeners
+// Initializing the API client library and set up sign-in listeners
 function initClient() {
   gapi.client.init({
     clientId: '651428278188-t1fdurtp5h2lkgin3g9cih0n683au66u.apps.googleusercontent.com',
     scope: 'email'
   }).then(function() {
-    // Listen for sign-in state changes
+    // Listening for sign-in state changes
     gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
 
     // Handle the initial sign-in state
@@ -24,8 +24,6 @@ function initClient() {
 function updateSigninStatus(isSignedIn) {
     if (isSignedIn) {
       // User is signed in, display authenticated content or redirect to the desired page
-      // For example:
-      // window.location.href = "authenticated.html";
       console.log('User is signed in.');
       document.getElementById('login-container').style.display = 'none';
       document.getElementById('swap-container').style.display = 'block';
@@ -84,7 +82,7 @@ function checkSwapRequest() {
     // Logic for accepting the swap request
     console.log('Swap request accepted.');
     
-    // Store the accepted swap information locally
+    // Storing the accepted swap information locally
     const acceptedSwap = {
       userId: 'f20210227', // Current user's ID
       requesterId: 'f20210229', // Requester's ID
