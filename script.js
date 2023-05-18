@@ -6,7 +6,7 @@ function handleClientLoad() {
 // Initialize the API client library and set up sign-in listeners
 function initClient() {
   gapi.client.init({
-    clientId: 'f2021XXXX',
+    clientId: '651428278188-t1fdurtp5h2lkgin3g9cih0n683au66u.apps.googleusercontent.com',
     scope: 'email'
   }).then(function() {
     // Listen for sign-in state changes

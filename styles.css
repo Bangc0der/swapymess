@@ -1,6 +1,10 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
+  background-image: url('bitsh.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   text-align: center;
 }
 
